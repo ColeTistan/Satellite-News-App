@@ -1,0 +1,70 @@
+$angular-color: #dd0032;
+$news-color: #2673e8;
+$github-color: #2A3F4B;
+$white-color: #fff;
+
+$two-second-transition: 0.2s all ease-in-out;
+
+.about 
+{
+    max-width: 25rem;
+    margin: 0 auto;
+    padding: 25px 25px 10px 25px;
+    letter-spacing: 1px;
+    background-color: $white-color;
+    border-radius: 8px;
+    border: 1px solid #333;
+    transition: $two-second-transition;
+
+    span 
+    {
+        font-weight: 600;
+    }
+
+    .about-list 
+    {
+        margin: 15px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 3rem;
+
+        #angular
+        {
+            color: $angular-color;
+            transition: $two-second-transition;
+        }
+
+        #angular:hover
+        {
+            color: darken($angular-color, 3%);
+        }
+
+        #news-api
+        {
+            color: $news-color;          
+            transition: $two-second-transition;
+        }
+
+        #news-api:hover
+        {
+            color: darken($news-color, 10%);
+        }
+
+        #github
+        {
+            color: $github-color;
+            transition: $two-second-transition;
+        }
+
+        #github:hover
+        {
+            color: darken($github-color, 10%);
+        }        
+    }
+}
+
+.about:hover 
+{
+    box-shadow: 0px 8px 6px -6px lighten(#333, 10%);
+    transition: $two-second-transition;
+}
