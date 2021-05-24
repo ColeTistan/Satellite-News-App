@@ -1,28 +1,30 @@
-<div class="about">
-    <span>Hello there!</span>
-    <br><br>
-    Thank you for your interest in this project.
-    I built this News App with Angular 8 and the News API to get
-    a head start on learning Angular. I am still adding great 
-    features to ensure the quality of the user's experience.
-    Below are links to what technologies I have used for this project.
-    <div class="about-bar">
-        <ul class="about-list">
-            <li>
-                <a href="https://angular.io/" target="_blank"  id="angular">
-                    <fa-icon [icon]="angularIcon"></fa-icon>
-                </a>
-            </li>
-            <li>
-                <a href="https://newsapi.org/" target="_blank" id="news-api">
-                    <fa-icon [icon]="newspaperIcon"></fa-icon>
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank" id="github">
-                    <fa-icon [icon]="githubIcon"></fa-icon>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
+<mat-card class="about">
+    <mat-card-header>
+        <mat-card-title>
+            Hello there!
+        </mat-card-title>
+        <mat-card-subtitle>
+            Thank you for your interest in this project!
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        I built this News App with Angular 8, Angular Material and the News API to get
+        a head start on learning Angular. I am still adding great 
+        features to ensure the quality of the user's experience.
+        Below are links to what technologies I have used for this project.
+    </mat-card-content>
+    <mat-card-actions>
+        <a href="https://angular.io/" target="_blank"  id="angular">
+            <fa-icon [icon]="angularIcon"></fa-icon>
+        </a>
+        <a href="https://material.angular.io/" target="_blank"  id="material">
+            <fa-icon [icon]="materialIcon"></fa-icon>
+        </a>
+        <a href="https://newsapi.org/" target="_blank" id="news-api">
+            <fa-icon [icon]="newspaperIcon"></fa-icon>
+        </a>
+        <a href="" target="_blank" id="github">
+            <fa-icon [icon]="githubIcon"></fa-icon>
+        </a>
+    </mat-card-actions>
+</mat-card>

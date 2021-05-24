@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faAngular, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faGithub, faUikit } from '@fortawesome/free-brands-svg-icons';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -17,5 +17,6 @@ export class AboutComponent implements OnInit {
 
   angularIcon = faAngular;
   githubIcon = faGithub;
-  newspaperIcon = faNewspaper;
+  newspaperIcon = faNewspaper; 
+  materialIcon = faUikit;
 }

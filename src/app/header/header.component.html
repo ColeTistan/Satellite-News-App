@@ -1,0 +1,59 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav 
+    #drawer 
+    class="sidenav" 
+    fixedInViewport="false"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>News Categories</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">
+        <fa-icon [icon]="homeIcon"></fa-icon>
+        Home
+      </a>
+      <a mat-list-item href="#">
+        <fa-icon [icon]="businessIcon"></fa-icon>
+        Business
+      </a>
+      <a mat-list-item href="#">
+        <fa-icon [icon]="entertainmentIcon"></fa-icon>
+        Entertainment
+      </a>
+      <a mat-list-item href="#">
+        <fa-icon [icon]="healthIcon"></fa-icon>        
+        Health
+      </a>
+      <a mat-list-item href="#">
+        <fa-icon [icon]="scienceIcon"></fa-icon>
+        Science
+      </a>
+      <a mat-list-item href="#">
+        <fa-icon [icon]="sportsIcon"></fa-icon>
+        Sports
+      </a>
+      <a mat-list-item href="#">
+        <fa-icon [icon]="technologyIcon"></fa-icon>        
+        Technology
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>Satellite News</span>
+      <span class="spacer"></span>
+      <a mat-list-item routerLink="/about">
+        About
+      </a>
+    </mat-toolbar>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

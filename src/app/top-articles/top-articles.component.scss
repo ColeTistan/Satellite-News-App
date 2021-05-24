@@ -1,99 +1,34 @@
-$p2: 25px;
-$ls0: 1px;
-$grey-color: #2D3134;
-$primary-color: #2673E8;
-$light-color: #eee;
-$container-width: 100%;
+$primary-color: #2673e8;
+$light-color: #eeeeee;
 
-.row 
+img
 {
-    width: $container-width - 25;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
 }
 
-img 
+.article
 {
-    width: $container-width;
-    display: block;
-}
+    width: 475px;
+    padding: 25px;
 
-.article 
-{
-    margin: 0 auto;
-    border: $ls0 solid $grey-color;
-    .article-info 
+    mat-card-actions
     {
-        padding: $p2 $p2 0 $p2;
-
-        .article-title 
+        text-align: center;
+        
+        .article-link
         {
-            font-size: 24px;
-            text-align: left;
-            letter-spacing: 2px;
-        }
-
-        .article-content
-        {
-            padding: $p2 - 5px;
-
-            .article-details
-            {
-                letter-spacing: $ls0;
-                font-size: 1.2rem;
-            }
-        }
-
-        .published-date
-        {
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .article-footer 
-        {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-
-            .article-link
-            {
-                text-decoration: none;
-                font-size: 1rem;
-                font-weight: 600;
-                color: $light-color;
-                background-color: $primary-color;
-                padding: $p2 - 15;
-                border-radius: 6px;
-                letter-spacing: $ls0;
-                transition: 0.1s all ease-in;
-            }
-
-            .article-link:hover
-            {
-                background-color: lighten($primary-color, 3);
-                transition: 0.1s all ease-in;
-            }
+            background-color: $primary-color;
+            color: $light-color;
         }
     }
 }
 
-@media screen and (max-width: 1024px) {
-
-.row {
-    width: $container-width - 5;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-}
-
-@media screen and (max-width: 768px) {
-
-.row {
-    width: $container-width - 10;
-    grid-template-columns: repeat(1, 1fr);
-}
-
+.row
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin: 50px;
 }

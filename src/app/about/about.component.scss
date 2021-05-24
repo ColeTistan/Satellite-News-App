@@ -1,4 +1,5 @@
 $angular-color: #dd0032;
+$material-color: #3f51b5;
 $news-color: #2673e8;
 $github-color: #2A3F4B;
 $white-color: #fff;
@@ -11,9 +12,7 @@ $two-second-transition: 0.2s all ease-in-out;
     margin: 0 auto;
     padding: 25px 25px 10px 25px;
     letter-spacing: 1px;
-    background-color: $white-color;
     border-radius: 8px;
-    border: 1px solid #333;
     transition: $two-second-transition;
 
     span 
@@ -21,7 +20,7 @@ $two-second-transition: 0.2s all ease-in-out;
         font-weight: 600;
     }
 
-    .about-list 
+    .mat-card-actions
     {
         margin: 15px;
         display: flex;
@@ -37,6 +36,17 @@ $two-second-transition: 0.2s all ease-in-out;
         #angular:hover
         {
             color: darken($angular-color, 3%);
+        }
+
+        #material 
+        {
+            color: $material-color;
+            transition: $two-second-transition;
+        }
+
+        #material:hover 
+        {
+            color: darken($material-color, 5%)
         }
 
         #news-api
@@ -67,4 +77,14 @@ $two-second-transition: 0.2s all ease-in-out;
 {
     box-shadow: 0px 8px 6px -6px lighten(#333, 10%);
     transition: $two-second-transition;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        margin: 15px;
+    }
+
+    fa-icon {
+        font-size: 2.5rem;
+    }
 }
