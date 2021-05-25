@@ -10,7 +10,7 @@ img
 
 .article
 {
-    width: 475px;
+    width: 400px;
     padding: 25px;
 
     mat-card-actions
@@ -31,4 +31,17 @@ img
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
     margin: 50px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .row 
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .article
+    {
+        width: 285px;
+    }
 }

@@ -5,9 +5,15 @@ footer
 {
     background-color: $primary-color;
     color: $light-color;
-    margin-top: auto;
+    margin-top: 21.2%;
     padding: 1rem;
     font-size: 1.2rem;
     letter-spacing: 2px;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        margin-top: 60%;
+    }
 }
