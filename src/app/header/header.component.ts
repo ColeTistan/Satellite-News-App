@@ -19,6 +19,7 @@ export class HeaderComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  // declare font awesome icons for UI
   homeIcon = faHome;
   businessIcon = faBriefcase;
   entertainmentIcon = faVideo;

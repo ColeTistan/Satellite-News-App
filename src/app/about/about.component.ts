@@ -15,6 +15,7 @@ export class AboutComponent implements OnInit {
 
   }
 
+  // declare font awesome icons for UI
   angularIcon = faAngular;
   githubIcon = faGithub;
   newspaperIcon = faNewspaper; 

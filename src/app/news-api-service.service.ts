@@ -30,12 +30,17 @@ export class NewsApiService {
   apiKey = `apiKey=5ba299e7890845fd88e4c936f97e5468`
   baseUrl = `https://newsapi.org/v2/top-headlines?${this.apiKey}`
   
+  // helper method to GET request any particular categories
+  // e.g. business news, technology news, etc.
   articleBuilder(category :string, country :string)
   { 
     return this._http.get(`${this.baseUrl}&category=${category}&country=${country}`);
   }
   
-  // GET Request to pass async messages
+  /* 
+    retrieve data from a news category
+    @return the articleBuilder method as an Observable object with a category and country.  
+  */
   businessArticles():Observable<any>
   {
     return this.articleBuilder(this.categories[0], this.defaultCountry);
