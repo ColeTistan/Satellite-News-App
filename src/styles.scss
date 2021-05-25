@@ -66,3 +66,38 @@ li
 {
     list-style: none;
 }
+
+$primary-color: #2673e8;
+$light-color: #eeeeee;
+
+img
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.article
+{
+    width: 475px;
+    padding: 25px;
+
+    mat-card-actions
+    {
+        text-align: center;
+        
+        .article-link
+        {
+            background-color: $primary-color;
+            color: $light-color;
+        }
+    }
+}
+
+.row
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin: 50px;
+}

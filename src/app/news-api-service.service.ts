@@ -13,7 +13,7 @@ export class NewsApiService {
     // list of categories
     categories = [
       'business',
-      'enterainment',
+      'entertainment',
       'general', 
       'health',
       'science', 
@@ -46,7 +46,7 @@ export class NewsApiService {
     return this.articleBuilder(this.categories[1], this.defaultCountry);
   }
 
-  topArticles():Observable<any> 
+  generalArticles():Observable<any> 
   {
     return this.articleBuilder(this.categories[2], this.defaultCountry);
   }

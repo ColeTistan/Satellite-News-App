@@ -1,0 +1,18 @@
+<div class="row">
+    <mat-card class="article" *ngFor="let article of articles">
+      <mat-card-header>
+        <mat-card-title>{{article.title}}</mat-card-title>
+        <mat-card-subtitle>{{article.author}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{article.urlToImage}}" alt="{{article.urlToImage}}">
+      <mat-card-content>
+        <p>{{article.description}}</p>
+      </mat-card-content>
+      <mat-card-footer>
+        <mat-card-actions>
+          <a mat-raised-button class="article-link" href="{{article.url}}">Read More</a>
+        </mat-card-actions>
+      </mat-card-footer>
+    </mat-card>
+</div>
+  

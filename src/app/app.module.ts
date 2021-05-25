@@ -25,6 +25,12 @@ import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './header/header.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
+import { BusinessArticlesComponent } from './business-articles/business-articles.component';
+import { EntertainmentArticlesComponent } from './entertainment-articles/entertainment-articles.component';
+import { HealthArticlesComponent } from './health-articles/health-articles.component';
+import { ScienceArticlesComponent } from './science-articles/science-articles.component';
+import { SportsArticlesComponent } from './sports-articles/sports-articles.component';
+import { TechnologyArticlesComponent } from './technology-articles/technology-articles.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,13 @@ import { MatListModule } from '@angular/material/list';
     TopArticlesComponent,
     AboutComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    BusinessArticlesComponent,
+    EntertainmentArticlesComponent,
+    HealthArticlesComponent,
+    ScienceArticlesComponent,
+    SportsArticlesComponent,
+    TechnologyArticlesComponent
   ],
   
   imports: [

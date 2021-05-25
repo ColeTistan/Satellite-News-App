@@ -7,7 +7,7 @@ import { Component, ElementRef} from '@angular/core';
 })
 export class AppComponent {
 
-  constructor(private _elementRef : ElementRef) { }
+  constructor() { }
 
   title = 'satellite-news-app';
 }
